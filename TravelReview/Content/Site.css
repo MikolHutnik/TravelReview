@@ -22,3 +22,30 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*container*/ 
+#reviews {
+    display: grid;
+    grid-gap: 8px 8px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7,150px);
+    margin: 2rem auto;
+    max-width: 1000px;
+    width: 90%;
+}
+
+.section-a {
+   grid-row: 2;
+    background-color: black;
+    grid-column: 1 / span3;
+    font-size: 24px;
+    color: orange;
+}
+
+/*section-f {
+    grid-row: 2;
+    background-color: black;
+    grid-column: 1 / span3;
+    font-size: 24px;
+    color: orange;
+}*/
