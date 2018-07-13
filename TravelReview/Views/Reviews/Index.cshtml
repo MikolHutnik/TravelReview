@@ -3,13 +3,59 @@
 @{
     ViewBag.Title = "Index";
 }
+<div class="container">
 
-<h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
+    <h2>Index</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+
+    <div class="section-a">
+        @Html.DisplayNameFor(model => model.Category.Name)
+    </div>
+
+    <div class="section-b">
+        @Html.DisplayNameFor(model => model.Title)
+    </div>
+
+    <div class="section-c">
+        @Html.DisplayNameFor(model => model.Content)
+    </div>
+
+    <div class="section-d">
+        @Html.DisplayNameFor(model => model.ReviewDate)
+    </div>
+
+    @foreach (var item in Model)
+    {
+
+
+        <div class="section-e">
+            @Html.DisplayFor(modelItem => item.Category.Name)
+        </div>
+
+        <div class="section-f">
+            @Html.DisplayFor(modelItem => item.Title)
+        </div>
+
+        <div class="section-g">
+            @Html.DisplayFor(modelItem => item.Content)
+        </div>
+
+        <div class="section-h">
+            @Html.DisplayFor(modelItem => item.ReviewDate)
+        </div>
+        <div class="section-i">
+            @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+        </div>
+
+    }
+</div>
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Category.Name)
@@ -48,4 +94,4 @@
     </tr>
 }
 
-</table>
+</table>*@
