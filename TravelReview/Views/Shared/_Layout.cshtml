@@ -10,12 +10,12 @@
 </head>
 <body>
    <nav>
-        <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-        </ul>
+       <ul>
+           <li>@Html.ActionLink("Home", "index", "Home")</li>
+           <li>@Html.ActionLink("Reviews","index","Reviews")</li>
+           <li>@Html.ActionLink("Categories","index","Categories")</li>
+           <li><a href="#about">About</a></li>
+       </ul>
     </nav>
     @*<div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
