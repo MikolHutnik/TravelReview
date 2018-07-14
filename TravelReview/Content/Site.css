@@ -33,7 +33,6 @@ textarea {
     max-width: 1000px;
     width: 90%;
 }
-
 .section-a {
    grid-row: 2;
     background-color: black;
@@ -49,3 +48,45 @@ textarea {
     font-size: 24px;
     color: orange;
 }*/
+
+/*review cards*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+}
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+.container {
+    padding: 2px 16px;
+}
+/*review cards end*/
+
+/*NavBar*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+nav li {
+    float: left;
+}
+
+   nav li a {
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+   nav li a:hover {
+            background-color: #111;
+        }
+        /*navbar end*/
