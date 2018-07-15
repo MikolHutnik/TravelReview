@@ -222,7 +222,14 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\6_reasons_to_visit_thailand_1.jpg" />
+    <Content Include="Images\BackGroundPic.jpg" />
+    <Content Include="Images\california-screamin.jpg" />
+    <Content Include="Images\california.jpg" />
+    <Content Include="Images\Crystal-Ghost-Town-Fall-Colors-OutThere-Colorado-1.jpg" />
+    <Content Include="Images\Glen-Canyon-Utah.jpg" />
     <Content Include="Images\japan.jpg" />
+    <Content Include="Images\jun2015_h11_colorado.jpg" />
+    <Content Include="Images\Utah-Adventure.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />

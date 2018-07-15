@@ -1,15 +1,67 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
-
-
+<header>
+    <h1>Travel Review</h1>
+</header>
 <div class="jumbotron">
-    <h1>Travel Reviews</h1>
-    <p class="lead">    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    @*<h1>Travel Reviews</h1>*@
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
+            <li data-target="#demo" data-slide-to="5"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/Images/california-screamin.jpg"  width="1300" height="500">
+                <h2>California</h2>
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/california.jpg" width="1300" height="500">
+                <h2>California</h2>
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/Crystal-Ghost-Town-Fall-Colors-OutThere-Colorado-1.jpg" width="1300" height="500">
+                <h2>Colorado</h2>
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/jun2015_h11_colorado.jpg" width="1300" height="500">
+                <h2>Colorado</h2>
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/Utah-Adventure.jpg" width="1300" height="500">
+                <h2>Utah</h2>
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/Glen-Canyon-Utah.jpg" width="1300" height="500">
+                <h2>Utah</h2>
+            </div>
+
+
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    @*<p class="lead">    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
+    @*<p><a class="btn btn-primary btn-lg"  @Html.ActionLink("Reviews","index","Reviews") </a></p>*@
 </div>
 
-<div class="row">
+@*<div class="row">
     <div class="col-md-4">
         <h2>Getting started</h2>
         <p>
@@ -29,7 +81,7 @@
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
-    <div class="col-md-4">
-        @Html.ActionLink("Test", "index", "Reviews")
-    </div>
-</div>
+   
+</div>*@
+
+
