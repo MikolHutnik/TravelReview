@@ -28,26 +28,80 @@ textarea {
     display: grid;
     grid-gap: 8px 8px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(7,150px);
+    grid-template-rows: repeat(8,50px);
     margin: 2rem auto;
     max-width: 1000px;
     width: 90%;
+    color:white;
 }
 .section-a {
-   grid-row: 2;
-    background-color: black;
-    grid-column: 1 / span3;
+   
+    grid-column: 1;
+    grid-row:2;
     font-size: 24px;
-    color: orange;
+    color: white;
 }
 
-/*section-f {
-    grid-row: 2;
-    background-color: black;
-    grid-column: 1 / span3;
+.section-b {
+    grid-column:1;
+    grid-row:3;
+    color: white;
     font-size: 24px;
-    color: orange;
-}*/
+}
+
+.section-c {
+    grid-column:1;
+    grid-row:4;
+    color: white;
+    font-size: 24px;
+}
+
+.section-d {
+    grid-column:1;
+    grid-row:5;
+    color: white;
+    font-size: 24px;
+}
+
+.section-e {
+    grid-row: 2;
+    grid-column: 2;
+    font-size: 24px;
+    color: white;
+}
+
+.section-f {
+    grid-column:2;
+    grid-row:3;
+    color: white;
+    font-size: 24px;
+}
+
+.section-g {
+    grid-column: 2;
+    grid-row: 4;
+    color: white;
+    font-size: 24px;
+}
+
+.section-h {
+    grid-column:2;
+    grid-row:5;
+    color: white;
+    font-size: 24px;
+}
+
+.section-i {
+    grid-column:1;
+    grid-row:7;
+    color: white;
+    font-size: 24px;
+}
+
+h2,a,h1,p{
+    color:white;
+}
+
 
 /*review cards*/
 .card {

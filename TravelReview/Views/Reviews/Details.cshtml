@@ -5,64 +5,76 @@
 }
 
 <h2>Details</h2>
-<h2>Card</h2>
 
-<div class="cardOne">
-
-    <img src="~/Images/Crystal-Ghost-Town-Fall-Colors-OutThere-Colorado-1.jpg"  alt="Avatar" style="width:100%">
+<div class="card">
+    @* Card View for Details partial view. *@
+    <img src="img_avatar.png" alt="Avatar" style="width:100%">
     <div class="container">
-        <h4><b>John Doe</b></h4>
-        <p>Architect & Engineer</p>
+        <h4>@Html.DisplayNameFor(model => model.Category.Name)</h4>
+        <p><b>@Html.DisplayFor(model => model.Category.Name)</b></p>
+        <h4><b>@Html.DisplayNameFor(model => model.Title)</b></h4>
+        <p><b>@Html.DisplayFor(model => model.Title)</b></p>
+        <h4><b>@Html.DisplayNameFor(model => model.Content)</b></h4>
+        <p><b>@Html.DisplayFor(model => model.Content)</b></p>
+        <p><b>@Html.DisplayNameFor(model => model.ReviewDate)</b></p>
+        <p><b>@Html.DisplayFor(model => model.ReviewDate)</b></p>
+        @*<p>Architect & Engineer</p>*@
     </div>
 </div>
 
-<div class="cardTwo">
+@*<h2>Card</h2>*@
 
-    <img src="~/Images/Glen-Canyon-Utah.jpg"  alt="Avatar" style="width:100%">
-    <div class="container">
-        <h4><b>Utah</b></h4>
-        <p>Glen Canyon</p>
-    </div>
-</div>
+@*<div class="cardOne">
 
-<div>
-    <h4>Reviews</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.Name)
-        </dt>
+        <img src="~/Images/Crystal-Ghost-Town-Fall-Colors-OutThere-Colorado-1.jpg"  alt="Avatar" style="width:100%">
+        <div class="container">
+            <h4><b>@Html.DisplayNameFor(model => model.Category.Name)</b></h4>
+            <h4><b>@Html.DisplayFor(model => model.Category.Name)</b></h4>
 
-        <dd>
-            @Html.DisplayFor(model => model.Category.Name)
-        </dd>
+            <p>@Html.DisplayNameFor(model => model.Title)</p>
+        </div>
+    </div>*@
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Content)
-        </dt>
+@*<div>
+        <h4>Reviews</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Category.Name)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Content)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Category.Name)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ReviewDate)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Title)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.ReviewDate)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Title)
+            </dd>
 
-    </dl>
-</div>
+            <dt>
+                @Html.DisplayNameFor(model => model.Content)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Content)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ReviewDate)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ReviewDate)
+            </dd>
+
+        </dl>
+    </div>*@
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
     @Html.ActionLink("Back to List", "Index")
